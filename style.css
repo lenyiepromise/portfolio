@@ -1,0 +1,15 @@
+html {
+    font-size: clamp(16px, 2.5vw, 18px);
+  }
+  .nav-menu {
+    transition: max-height 0.3s ease-in-out;
+  }
+  @media (max-width: 640px) {
+    .nav-menu {
+      max-height: 0;
+      overflow: hidden;
+    }
+    .nav-menu.open {
+      max-height: 300px;
+    }
+  }
